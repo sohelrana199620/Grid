@@ -5,10 +5,10 @@
 :root {
   --bg-color: rgb(17, 126, 44);
   --txt-color: rgb(255, 255, 255);
-  --txt1-color: rgb(243, 164, 18);
+  --txt1-color: rgb(252, 125, 7);
 }
 .container {
-  background: var(--txt1-color);
+  background: #fff;
   display: grid;
   width: 100%;
   height: auto;
@@ -19,7 +19,7 @@
     "footer footer footer footer";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.1fr 0.6fr 1fr 0.2fr;
-  grid-gap: 1px;
+  grid-gap: 5px;
 }
 .nav_bar {
   width: 100%;
@@ -32,9 +32,99 @@
 a {
   text-decoration: none;
 }
+h4 {
+  margin-bottom: 15px;
+  color: var(--txt1-color);
+}
+del {
+  margin: 5px 35px;
+  color: red;
+}
+.txt_word {
+  margin-left: 10px;
+}
 .side_bar {
   background: #fff;
   grid-area: side_bar;
+  padding: 5px;
+}
+.shop_name {
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+.shop_name img {
+  padding: 10%;
+  width: 100px;
+}
+.shop_name h1 {
+  margin-bottom: 100px;
+  color: var(--txt1-color);
+  font-size: 45px;
+  text-align: center;
+}
+.Order_button {
+  color: rgb(252, 125, 7);
+}
+.Order_button h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.Order_button li {
+  list-style: none;
+}
+.Order_button li button {
+  width: 95px;
+  margin: 5px;
+  background: transparent;
+  border: 1px solid rgb(252, 125, 7);
+  padding: 5px;
+  font-size: 12px;
+  color: rgb(252, 125, 7);
+}
+.Order_button li button:hover {
+  background: rgb(252, 125, 7);
+  color: #fff;
+}
+.p_t {
+  display: inline-flex;
+  margin-top: 20px;
+  padding: 10px;
+}
+.p_t h5 {
+  font-size: 17px;
+  margin-right: 10px;
+}
+.p_t input {
+  text-align: center;
+  outline: none;
+  border: 1px solid rgb(252, 125, 7);
+}
+.O_d_last {
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+.O_d_last button {
+  width: 85%;
+  height: 50px;
+  left: 0%;
+  right: 0%;
+  position: absolute;
+  margin: auto;
+  background: transparent;
+  border: 2px solid rgb(252, 125, 7);
+  text-align: center;
+  font-size: 25px;
+  color: rgb(252, 125, 7);
+  border-radius: 5px;
+}
+.O_d_last button:hover {
+  background: rgb(252, 125, 7);
+  color: #fff;
 }
 .nav_bar {
   grid-area: nav_bar;
@@ -85,7 +175,8 @@ a {
   background: rgb(17, 126, 44);
   grid-area: footer;
   text-align: center;
-  margin-top: 5px;
-  padding: 5px;
   color: var(--txt-color);
+}
+.footer p {
+  margin: 20px;
 }
